@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Dashboard</title>
+</head>
+<body>
+  <div class="content">
+    <nav class="sidebar">
+      <div class="sidebar__title">
+        <img src="img/setting.svg" alt="setting-icon" class="sidebar__title-image">
+        <h2 class="sidebar__title-text">Dashboard</h2>
+        <span class="sidebar__title-version">v.01</span>
+      </div>
+      <ul class="sidebar__list">
+        <li class="sidebar__list-item">
+          <a href="#">
+            <img src="img/dashboard-icon.svg" alt="dashboard-icon">
+            <h3>Dashboard</h3>
+          </a>
+        </li>
+        <li class="sidebar__list-item">
+          <a href="#">
+            <img src="img/product-icon.svg" alt="product-icon">
+            <h3>Product</h3>
+          </a>
+        </li>
+        <li class="sidebar__list-item active">
+          <a href="#">
+            <img src="img/customers-icon.svg" alt="customers-icon">
+            <h3>Customers</h3>
+          </a>
+        </li>
+        <li class="sidebar__list-item">
+          <a href="#">
+            <img src="img/income-icon.svg" alt="income-icon">
+            <h3>Income</h3>
+          </a>
+        </li>
+        <li class="sidebar__list-item">
+          <a href="#">
+            <img src="img/promote-icon.svg" alt="promote-icon">
+            <h3>Promote</h3>
+          </a>
+        </li>
+        <li class="sidebar__list-item">
+          <a href="#">
+            <img src="img/help-icon.svg" alt="help-icon">
+            <h3>Help</h3>
+          </a>
+        </li>
+      </ul>
+      <div class="sidebar__footer">
+        <div class="sidebar__footer-image">
+          <img src="img/user.png" alt="user-photo">
+        </div>
+        <div class="sidebar__footer-text">
+          <h4 class="sidebar__footer-name">Evano</h4>
+          <p class="sidebar__footer-position">Project Manager</p>
+        </div>
+      </div>
+    </nav>
+    <div class="mobile__close-menu"></div>
+    <div class="main">
+      <div class="main__header">
+        <h1 class="main__header-title">Hello Evano 👋🏼</h1>
+        <button class="menu__open"><img src="img/menu-icon.svg" alt="menu-icon"></button>
+      </div>
+      <div class="customers">
+        <div class="customers__header">
+          <div class="customers__header-text">
+            <h2 class="customers__header-title">All Customers</h2>
+            <button class="customers__header-button">Active Members</button>
+          </div>
+          <input type="text" class="customers__header-search" placeholder="Search">
+        </div>
+        <div class="customers__table-overlay">
+          <table class="customers__table">
+            <colgroup>
+              <col>
+              <col>
+              <col>
+              <col>
+              <col>
+              <col style="width: 100px;">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>Customer Name</th>
+                <th>Company</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Country</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Jane Cooper</td>
+                <td>Microsoft</td>
+                <td>(225) 555-0118</td>
+                <td>jane@microsoft.com</td>
+                <td>United States</td>
+                <td><span class="customers__table-status active">Active</span></td>
+              </tr>
+              <tr>
+                <td>Floyd Miles</td>
+                <td>Yahoo</td>
+                <td>(205) 555-0100</td>
+                <td>floyd@yahoo.com</td>
+                <td>Kiribati</td>
+                <td><span class="customers__table-status inactive">Inactive</span></td>
+              </tr>
+              <tr>
+                <td>Ronald Richards</td>
+                <td>Adobe</td>
+                <td>(302) 555-0107</td>
+                <td>ronald@adobe.com</td>
+                <td>Israel</td>
+                <td><span class="customers__table-status inactive">Inactive</span></td>
+              </tr>
+              <tr>
+                <td>Marvin McKinney</td>
+                <td>Tesla</td>
+                <td>(252) 555-0126</td>
+                <td>marvin@tesla.com</td>
+                <td>Iran</td>
+                <td><span class="customers__table-status active">Active</span></td>
+              </tr>
+              <tr>
+                <td>Jerome Bell</td>
+                <td>Google</td>
+                <td>(629) 555-0129</td>
+                <td>jerome@google.com</td>
+                <td>Réunion</td>
+                <td><span class="customers__table-status active">Active</span></td>
+              </tr>
+              <tr>
+                <td>Kathryn Murphy</td>
+                <td>Microsoft</td>
+                <td>(406) 555-0120</td>
+                <td>kathryn@microsoft.com</td>
+                <td>Curaçao</td>
+                <td><span class="customers__table-status active">Active</span></td>
+              </tr>
+              <tr>
+                <td>Jacob Jones</td>
+                <td>Yahoo</td>
+                <td>(208) 555-0112</td>
+                <td>jacob@yahoo.com</td>
+                <td>Brazil</td>
+                <td><span class="customers__table-status active">Active</span></td>
+              </tr>
+              <tr>
+                <td>Kristin Watson</td>
+                <td>Facebook</td>
+                <td>(704) 555-0127</td>
+                <td>kristin@facebook.com</td>
+                <td>Åland Islands</td>
+                <td><span class="customers__table-status inactive">Inactive</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="customers__footer">
+          <p class="customers__footer-info">Showing data 1 to 8 of 256K entries</p>
+          <ul class="pagination">
+            <li class="pagination__item"><span><</span></li>
+            <li class="pagination__item active"><span>1</span></li>
+            <li class="pagination__item"><a href="#">2</a></li>
+            <li class="pagination__item"><a href="#">3</a></li>
+            <li class="pagination__item"><a href="#">4</a></li>
+            <li class="pagination__item separator"><span>...</span></li>
+            <li class="pagination__item"><a href="#">40</a></li>
+            <li class="pagination__item"><a href="#">></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
